@@ -7,7 +7,12 @@ const nextConfig = {
 		appDir: true,
 		mdxRs: true,
 	},
-	output: 'export'
+	output: 'export',
+    images: {
+        unoptimized: true
+    },
+    // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
+    trailingSlash: true,
 };
 
 export default withContentlayer(nextConfig);
